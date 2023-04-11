@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>List of Folders</title>
+	<style>
+		ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+		}
+		li {
+			padding: 10px;
+			border-bottom: 1px solid #ccc;
+		}
+	</style>
+</head>
+<body>
+	<h1>List of Folders</h1>
+	<ul>
+		<?php
+			$dir = './';
+			$folders = array_diff(scandir($dir), array('..', '.'));
+			foreach ($folders as $folder) {
+				if (is_dir($dir . '/' . $folder)) {
+					echo '<li><a href="' . $folder . '">' . $folder . '</a></li>';
+				}
+			}
+		?>
+	</ul>
+</body>
+</html>
