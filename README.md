@@ -1,7 +1,11 @@
-# Vaje informatika
-Vaje, ki jih delamo v šoli pri predmetu informatike.
-Vsebujejo osnove HTML-ja, CSS-a in morda tudi JS, odvisno od časa.
+## Vaje iz informatike
 
-Raba datotek prosta.
+V tem repozitoriju najdete vaje, ki jih izvajamo pri predmetu informatike v šoli. Vaje se osredotočajo na osnove HTML-ja, CSS-a in morda tudi JavaScripta, odvisno od razpoložljivega časa.
 
-Lp, Jaka in Lin
+Datoteke, ki so potrebne za vaje, so prosto dostopne in lahko jih uporabljate po svoji presoji.
+
+Vsebina vaj se bo sčasoma posodabljala, zato spremljajte posodobitve v repozitoriju.
+
+Lep pozdrav,
+
+Jaka in Lin
