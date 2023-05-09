@@ -25,10 +25,28 @@
             border-radius: 80%;
         }
 
+        a {
+            color: rgb(255, 0, 0);
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: rgb(0, 255, 34);
+            text-decoration: underline;
+            animation: blink 0.2s linear infinite;
+            border: 20px dashed rgb(255, 0, 0);
+        }
+
         img {
             border: 20px dashed rgb(0, 255, 34);
             content: "Loading...";
             animation: blink 0.4s linear infinite;
+        }
+
+        img:hover {
+            border: 20px dashed rgb(255, 0, 0);
+            content: "Loading...";
+            animation: blink 0.2s linear infinite;
         }
 
         @keyframes blink {
@@ -70,6 +88,10 @@
     <br>
 
     <img src="https://media1.giphy.com/media/P18aB31TcT7DBpkyUh/giphy.gif" alt="" height="150" width="850px">
+
+    <br>
+
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/NSDAP-Logo.svg/220px-NSDAP-Logo.svg.png" alt="">
 </body>
 
 </html>
