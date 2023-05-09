@@ -1,5 +1,5 @@
 html {
-    background-color: rgb(236, 22, 22);
+    background-color:black;
 }
 
 a{
@@ -28,4 +28,21 @@ h3{
     width: 1200px;
     height: 300px;
     margin-left: 30%;
+}
+pre{
+    background-color: gray;
+    color: violet;
+    border-radius: 50%;
+    text-align: center;
+    font-size: large;
+}
+mark{
+    background-color: gold;
+}
+p{
+    font-size: large;
+    color: white;
+}
+address{
+    color: white;
 }
