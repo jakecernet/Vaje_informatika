@@ -21,11 +21,20 @@
 
         address {
             background-color: brown;
+            border: 5px dotted rgb(0, 255, 34);
             border-radius: 80%;
         }
 
         img {
-            border: 5px dotted rgb(0, 255, 34);
+            border: 20px dashed rgb(0, 255, 34);
+            content: "Loading...";
+            animation: blink 0.4s linear infinite;
+        }
+
+        @keyframes blink {
+            50% {
+                opacity: 0;
+            }
         }
     </style>
 
