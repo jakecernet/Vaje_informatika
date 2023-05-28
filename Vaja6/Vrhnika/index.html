@@ -11,17 +11,18 @@
 </head>
 
 <body>
-    <h1>Vrhnika</h1>
-    <div class="navbar">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#galery">Gallery</a></li>
-        </ul>
+    <div class="header">
+        <h1>Vrhnika</h1>
+        <div class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#galery">Gallery</a></li>
+            </ul>
+        </div>
     </div>
     <div class="wrapper">
         <div class="content">
-            <img src="img/main.jpg" alt="">
             <div class="about">
                 <h2 id="about">About</h2>
                 <p>
@@ -46,11 +47,11 @@
             <div class="galery">
                 <h2 id="galery">Gallery</h2>
                 <div class="galery-container">
-                    <div class="galery-item">
+                    <div class="galery-item" onclick="zoom(1)">
                         <img src="img/1.jpg" alt="Vrhnika">
                     </div>
-                    <div class="galery-item">
-                        <img src="img/2.jpg" alt="Vrhnika">
+                    <div class="galery-item" onclick="zoom(2)">
+                        <img src="img/2.jpg" alt="Vrhnika" id="2" onclick="zoom(2)">
                     </div>
                     <div class="galery-item">
                         <img src="img/3.jpg" alt="Vrhnika">
@@ -68,10 +69,11 @@
             </div>
             <br>
             <div class="footer">
-                <p>© 2023 Vrhnika</p>
+                <p>Jaka Černetič © 2023 Vrhnika</p>
             </div>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
