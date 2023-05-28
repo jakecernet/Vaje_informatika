@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piran | Pirano</title>
+    <link rel="icon" href="Photos/logo.ico">
+    <link rel="stylesheet" href="vaja.css">
+</head>
+
+<body>
+    <header id="header">
+        <span>
+            <nav class="header-nav">
+                <ul>
+                    <!-- <li class="logo">Piran</li> -->
+                    <li class="link" onclick="">Domov</li>
+                    <li class="link" onclick="goToAbout()">Zanimivosti</li>
+                    <li class="link" onclick="goToGal()">Galerija</li>
+                </ul>
+                <hr>
+            </nav>
+        </span>
+        <h1>Piran | Pirano</h1>
+        <img class="bounce-2 box arrow " src="Photos/iconmonstr-arrow-11.svg" alt="">
+    </header>
+    <article>
+        <!-- <img src="Photos/iStock-579433690 (1).jpg" class="normal-img" alt="" srcset="">
+        <img src="Photos/iStock-1397519265.jpg" class="phone-img" alt=""> -->
+
+        <section class="mesto">
+            <h2 id="about">Zanimivosti</h2>
+            <p>Piran je slikovito obmorsko mesto, ki se nahaja ob južnem delu Slovenske obale. Znanih je njegovo bogato
+                zgodovinsko ozadje, ki sega vse do rimskega obdobja.</p>
+            <p>Srednjeveški arhitekturni slog je močno zaznamoval Piran, saj je mesto ohranilo svoj starodavni videz.
+                Ozke tlakovane ulice, visoki kamniti zidovi in ​​stolpi ter čudovite trge ustvarjajo pravljico, ki
+                privablja obiskovalce iz vsega sveta.</p>
+            <p>Glavno znamenitost Pirana predstavlja Stolnica sv. Jurija, imenovana tudi Piranska katedrala. Ta čudovita
+                cerkev je ena najbolj prepoznavnih arhitekturnih draguljev na slovenski obali.</p>
+            <p>Ob vznožju Piranskega polotoka se nahaja Tartinijev trg, ki je poimenovan po slavnem skladatelju
+                Giuseppeju Tartiniju, rojenem v Piranu. Ta trg je središče mestnega dogajanja, obdan z restavracijami,
+                kavarnami in trgovinami.</p>
+            <p>Mesto je znano tudi po solinah, ki se nahajajo v bližini. Soline so bila pomemben vir soli že v
+                preteklosti in danes predstavljajo kulturno dediščino ter privlačno turistično točko.</p><br>
+        </section>
+        <section class="galerija">
+            <h2 style="width: 100%;" id="galereija">Galerija</h2>
+            <div class="gallery">
+                <img id="krizec" onclick="closeImg()" class="krizec" src="Photos/cross-23.svg" alt="">
+                <span>
+                    <img id="s1" class="slikca" src="Photos/iStock-1160786976.jpg" alt="slika pirana" srcset="">
+                    <div onclick="povecajSliko1()" class="odpri">Povečaj sliko</div>
+
+                </span>
+                <span>
+                    <img id="s2" class="slikca" src="Photos/iStock-495672801.jpg" alt="slika pirana" srcset="">
+                    <div onclick="povecajSliko2()" class="odpri">Povečaj sliko</div>
+                </span>
+                <span>
+                    <img id="s3" class="slikca" src="Photos/iStock-490134077.jpg" alt="slika pirana" srcset="">
+                    <div onclick="povecajSliko3()" class="odpri">Povečaj sliko</div>
+                </span>
+                <span>
+                    <img id="s4" class="slikca" src="Photos/iStock-471449714.jpg" alt="slika pirana" srcset="">
+                    <div onclick="povecajSliko4()" class="odpri">Povečaj sliko</div>
+                </span>
+                <span>
+                    <img id="s5" class="slikca" src="Photos/iStock-186387197.jpg" alt="slika pirana" srcset="">
+                    <div onclick="povecajSliko5()" class="odpri">Povečaj sliko</div>
+                </span>
+                <span>
+                    <img id="s6" class="slikca" src="Photos/piran.jpg" alt="slika pirana" srcset="">
+                    <div onclick="povecajSliko6()" class="odpri">Povečaj sliko</div>
+                </span>
+            </div>
+        </section>
+        <p class="Copyright">Andriy Gryban © Informatika</p>
+    </article>
+
+    <script>
+        function goToHome() {
+            document.getElementById("header").scrollIntoView();
+        }
+        function goToAbout() {
+            document.getElementById("about").scrollIntoView();
+        }
+        function goToGal() {
+            document.getElementById("galereija").scrollIntoView();
+        }
+        function closeImg() {
+            document.getElementById("krizec").classList.add("krizec");
+            document.getElementById("krizec").classList.remove("active");
+            document.getElementById("s1").classList.remove("povecana");
+            document.getElementById("s1").classList.add("slikca");
+            document.getElementById("s2").classList.remove("povecana");
+            document.getElementById("s2").classList.add("slikca");
+            document.getElementById("s3").classList.remove("povecana");
+            document.getElementById("s3").classList.add("slikca");
+            document.getElementById("s4").classList.remove("povecana");
+            document.getElementById("s4").classList.add("slikca");
+            document.getElementById("s5").classList.remove("povecana");
+            document.getElementById("s5").classList.add("slikca");
+            document.getElementById("s6").classList.remove("povecana");
+            document.getElementById("s6").classList.add("slikca");
+        }
+        function povecajSliko1() {
+            let x = document.getElementById("s1");
+            x.classList.add("povecana");
+            x.classList.remove("slikca");
+            document.getElementById("krizec").classList.add("active");
+            document.getElementById("krizec").classList.remove("krizec");
+        }
+        function povecajSliko2() {
+            let x = document.getElementById("s2");
+            x.classList.add("povecana");
+            x.classList.remove("slikca");
+            document.getElementById("krizec").classList.add("active");
+            document.getElementById("krizec").classList.remove("krizec");
+        }
+        function povecajSliko3() {
+            let x = document.getElementById("s3");
+            x.classList.add("povecana");
+            x.classList.remove("slikca");
+            document.getElementById("krizec").classList.add("active");
+            document.getElementById("krizec").classList.remove("krizec");
+        }
+        function povecajSliko4() {
+            let x = document.getElementById("s4");
+            x.classList.add("povecana");
+            x.classList.remove("slikca");
+            document.getElementById("krizec").classList.add("active");
+            document.getElementById("krizec").classList.remove("krizec");
+        }
+        function povecajSliko5() {
+            let x = document.getElementById("s5");
+            x.classList.add("povecana");
+            x.classList.remove("slikca");
+            document.getElementById("krizec").classList.add("active");
+            document.getElementById("krizec").classList.remove("krizec");
+        }
+        function povecajSliko6() {
+            let x = document.getElementById("s6");
+            x.classList.add("povecana");
+            x.classList.remove("slikca");
+            document.getElementById("krizec").classList.add("active");
+            document.getElementById("krizec").classList.remove("krizec");
+        }
+    </script>
+</body>
+
+</html>
